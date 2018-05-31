@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.ui.menu.TransactionController">
+   <children>
+      <Label layoutX="240.0" layoutY="47.0" prefHeight="26.0" prefWidth="168.0" text="TRANSACTION">
+         <font>
+            <Font name="Bell MT Bold" size="21.0" />
+         </font></Label>
+      <Label layoutX="94.0" layoutY="143.0" text="EXPEDITEUR">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="468.0" layoutY="143.0" text="RECEVEUR">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font></Label>
+      <TextField fx:id="numC_Expe" layoutX="34.0" layoutY="180.0" promptText="le numero de compte ici">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="numC_Rece" layoutX="416.0" layoutY="180.0" promptText="le numero de compte ici">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></TextField>
+      <Button fx:id="searchExp" layoutX="197.0" layoutY="180.0" mnemonicParsing="false" onAction="#recherccheExp" prefHeight="25.0" prefWidth="66.0" text="search">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="searchRec" layoutX="576.0" layoutY="180.0" mnemonicParsing="false" onAction="#rechercheRec" prefHeight="25.0" prefWidth="66.0" text="search">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="34.0" layoutY="232.0" text="CNI :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="271.0" text="Nom :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="313.0" text="Prenom :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="345.0" text="Solde :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="380.0" text="Somme">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="somme_txt" layoutX="94.0" layoutY="378.0" prefHeight="26.0" prefWidth="158.0">
+         <font>
+            <Font name="Bell MT" size="10.0" />
+         </font>
+      </TextField>
+      <Label fx:id="cniExp_lbl" layoutX="113.0" layoutY="232.0" />
+      <Label fx:id="nomExp_lbl" layoutX="113.0" layoutY="271.0" />
+      <Label fx:id="prenomExp_lbl" layoutX="113.0" layoutY="313.0" />
+      <Label fx:id="soldeExp_lbl" layoutX="113.0" layoutY="345.0" />
+      <Label fx:id="cniRec_lbl" layoutX="532.0" layoutY="232.0" />
+      <Label fx:id="nomRec_lbl" layoutX="532.0" layoutY="271.0" />
+      <Label fx:id="prnomRec_lbl" layoutX="532.0" layoutY="313.0" />
+      <Label fx:id="soldeRec_lbl" layoutX="532.0" layoutY="345.0" />
+      <Button fx:id="valider_btn" layoutX="232.0" layoutY="500.0" mnemonicParsing="false" onAction="#valider" text="Valider">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="annuler_btn" layoutX="408.0" layoutY="500.0" mnemonicParsing="false" onAction="#annuler" text="Annuler">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="454.0" layoutY="232.0" text="CNI :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="271.0" text="Nom :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="313.0" text="Prenom :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="345.0" text="Solde :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="168.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Pictures/BANK.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="142.0" layoutX="520.0" layoutY="13.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Pictures/IMG-20170707-WA0113.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="431.0" prefHeight="21.0" prefWidth="41.0" text="Taxe">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="433.0" text="agence">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TAXE" layoutX="102.0" layoutY="428.0" prefHeight="27.0" prefWidth="152.0">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="agence" layoutX="492.0" layoutY="429.0" onAction="#loadAgencde" prefWidth="150.0" />
+      <DatePicker fx:id="dateOP" layoutX="15.0" layoutY="504.0" />
+
+   </children>
+</AnchorPane>

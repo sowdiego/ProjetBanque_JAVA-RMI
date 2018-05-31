@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.ui.menu.consultationController">
+   <children>
+      <TextField fx:id="compteRechercher" layoutX="169.0" layoutY="41.0" prefHeight="25.0" prefWidth="194.0">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="recherche" layoutX="363.0" layoutY="41.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="25.0" prefWidth="88.0" text="Rechercher" />
+      <Label layoutX="82.0" layoutY="202.0" text="Numero CNI">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="242.0" prefHeight="22.0" prefWidth="68.0" text="Prenom">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="202.0" text="Numero Compte">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="285.0" prefHeight="22.0" prefWidth="41.0" text="Nom">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="321.0" prefHeight="22.0" prefWidth="59.0" text="Adresse">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="358.0" prefHeight="22.0" prefWidth="88.0" text="Telephone">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="143.0" text="Information CLIENT">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="143.0" text="Information Compte">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="242.0" text="Cle RIB">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="277.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="277.0" text="Solde">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="346.0" layoutY="314.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="numCNI" layoutX="219.0" layoutY="202.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom" layoutX="219.0" layoutY="242.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom" layoutX="226.0" layoutY="288.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="adresse" layoutX="226.0" layoutY="321.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tel" layoutX="226.0" layoutY="358.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="numCompte" layoutX="495.0" layoutY="202.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cliRib" layoutX="495.0" layoutY="242.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="solde" layoutX="495.0" layoutY="280.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="typeCompte" layoutX="495.0" layoutY="314.0">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
